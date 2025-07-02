@@ -1,0 +1,76 @@
+.navbar, .footer {
+  transition: background 0.3s, color 0.3s;
+}
+
+[data-theme='dark'] {
+  --bg: #181a1b;
+  --fg: #f5f5f5;
+  --card-bg: #23272f;
+  --card-hover: #2c313a;
+  --primary: #007bff;
+  --primary-hover: #0056b3;
+  --border: #333;
+}
+[data-theme='light'] {
+  --bg: #f8f9fa;
+  --fg: #181a1b;
+  --card-bg: #fff;
+  --card-hover: #f1f3f6;
+  --primary: #007bff;
+  --primary-hover: #0056b3;
+  --border: #e0e0e0;
+}
+body {
+  background: var(--bg);
+  color: var(--fg);
+  transition: background 0.3s, color 0.3s;
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: box-shadow 0.3s, background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  background: var(--card-hover);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.card::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(120deg, var(--primary-hover) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+.card:hover::after {
+  opacity: 0.08;
+}
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  transition: background 0.3s, border 0.3s;
+}
+.btn-primary:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+.form-control, .form-select {
+  background: var(--card-bg);
+  color: var(--fg);
+  border: 1px solid var(--border);
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+@media (max-width: 768px) {
+  .navbar .container-fluid, .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .card {
+    margin-bottom: 1rem;
+  }
+}
