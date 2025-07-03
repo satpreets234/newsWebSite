@@ -17,7 +17,7 @@ export async function fetchAndStoreRSSNews() {
         title: item.title,
         description: item.contentSnippet || item.content || '',
         link: item.link,
-        category: item.categories?.[0] || 'general',
+        category: Array.isArray(item.categories) && item.categories.length > 0 ? item.categories[0] : (item.category || 'general'),
         createdAt: item.pubDate ? new Date(item.pubDate) : new Date(),
       });
     }

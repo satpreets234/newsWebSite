@@ -20,11 +20,22 @@
   --primary-hover: #0056b3;
   --border: #e0e0e0;
 }
+
+:root {
+  --primary-purple: #6C3EFF;
+  --accent-purple: #A259FF;
+  --soft-lavender: #E6E0FF;
+  --light-purple: #F3F0FF;
+  --dark-indigo: #3D246C;
+  --soft-white: #F8F7FA;
+}
+
 body {
-  background: var(--bg);
-  color: var(--fg);
+  background: var(--light-purple);
+  color: var(--dark-indigo);
   transition: background 0.3s, color 0.3s;
 }
+
 .card {
   background: var(--card-bg);
   border: 1px solid var(--border);
@@ -73,4 +84,8 @@ body {
   .card {
     margin-bottom: 1rem;
   }
+}
+
+.transition {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }

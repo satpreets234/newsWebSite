@@ -14,14 +14,17 @@
     "bcryptjs": "^3.0.2",
     "bootstrap": "^5.3.7",
     "i18next": "^25.3.0",
+    "joi": "^17.13.3",
     "jotai": "^2.12.5",
     "mongoose": "^8.16.1",
     "next": "15.3.4",
     "react": "^19.0.0",
+    "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.5.3",
     "react-redux": "^9.2.0",
-    "rss-parser": "^3.13.0"
+    "rss-parser": "^3.13.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
