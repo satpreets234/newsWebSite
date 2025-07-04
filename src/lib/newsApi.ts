@@ -7,6 +7,7 @@ export const newsApi = createApi({
   endpoints: (builder) => ({
     getNews: builder.query<INews[], void>({
       query: () => 'news',
+      transformResponse: (response: any) => response.data || [],
     }),
   }),
 });

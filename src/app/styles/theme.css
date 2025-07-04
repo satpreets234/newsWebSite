@@ -3,37 +3,26 @@
 }
 
 [data-theme='dark'] {
-  --bg: #181a1b;
-  --fg: #f5f5f5;
+  --primary-bg: #181a1b;
+  --secondary-bg: #23272f;
+  --accent: #00bcd4;
+  --text: #f8f7fa;
   --card-bg: #23272f;
-  --card-hover: #2c313a;
-  --primary: #007bff;
-  --primary-hover: #0056b3;
-  --border: #333;
+  --border: #444950;
 }
+
 [data-theme='light'] {
-  --bg: #f8f9fa;
-  --fg: #181a1b;
+  --primary-bg: #f3f3f3;
+  --secondary-bg: #fff;
+  --accent: #007bff;
+  --text: #181a1b;
   --card-bg: #fff;
-  --card-hover: #f1f3f6;
-  --primary: #007bff;
-  --primary-hover: #0056b3;
   --border: #e0e0e0;
 }
 
-:root {
-  --primary-dark: #23272f;
-  --accent-grey: #444950;
-  --soft-grey: #2c313a;
-  --light-grey: #f3f3f3;
-  --dark-grey: #181a1b;
-  --soft-white: #f8f7fa;
-  --primary-accent: #00bcd4;
-}
-
 body {
-  background: var(--dark-grey);
-  color: var(--soft-white);
+  background: var(--primary-bg);
+  color: var(--text);
   transition: background 0.3s, color 0.3s;
 }
 

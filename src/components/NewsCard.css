@@ -60,4 +60,9 @@
   position: relative;
   padding: 1.5rem;
   z-index: 1;
+}
+
+.news-card a, .news-card a:visited, .news-card a:active, .news-card a:hover, .news-card a:focus {
+  color: inherit;
+  text-decoration: none;
 } 
