@@ -18,6 +18,8 @@ const resources = {
       feedback: 'Feedback',
       feedbackPlaceholder: 'Your feedback...',
       rating: 'Rating',
+      login: 'Login',
+      signup: 'Sign Up',
       // ...add more keys as needed
     },
   },
@@ -37,6 +39,8 @@ const resources = {
       feedback: 'प्रतिक्रिया',
       feedbackPlaceholder: 'आपकी प्रतिक्रिया...',
       rating: 'रेटिंग',
+      login: 'लॉगिन',
+      signup: 'साइन अप',
     },
   },
   pa: {
@@ -55,6 +59,8 @@ const resources = {
       feedback: 'ਫੀਡਬੈਕ',
       feedbackPlaceholder: 'ਤੁਹਾਡਾ ਫੀਡਬੈਕ...',
       rating: 'ਰੇਟਿੰਗ',
+      login: 'ਲਾਗਇਨ',
+      signup: 'ਸਾਈਨ ਅੱਪ',
     },
   },
 };

@@ -22,17 +22,18 @@
 }
 
 :root {
-  --primary-purple: #6C3EFF;
-  --accent-purple: #A259FF;
-  --soft-lavender: #E6E0FF;
-  --light-purple: #F3F0FF;
-  --dark-indigo: #3D246C;
-  --soft-white: #F8F7FA;
+  --primary-dark: #23272f;
+  --accent-grey: #444950;
+  --soft-grey: #2c313a;
+  --light-grey: #f3f3f3;
+  --dark-grey: #181a1b;
+  --soft-white: #f8f7fa;
+  --primary-accent: #00bcd4;
 }
 
 body {
-  background: var(--light-purple);
-  color: var(--dark-indigo);
+  background: var(--dark-grey);
+  color: var(--soft-white);
   transition: background 0.3s, color 0.3s;
 }
 
